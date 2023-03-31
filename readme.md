@@ -1,6 +1,9 @@
-# Telegram transport
+# Messenger: Telegram transport
 
 ### Send and recieve messages with the usage of Telegram
+
+TODO: Kotlin classes
+TODO: Demo
 
 #### Setup
 
@@ -13,7 +16,7 @@ Example:
 python .\transport.py send -t 0123456789:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -n testchannelname -f Sender -c "This is the coolest test message!!!"
 ```
 
-4. Read message using the `transport.py` script
+4. Read the message using the `transport.py` script
 
 Example:
 ```
