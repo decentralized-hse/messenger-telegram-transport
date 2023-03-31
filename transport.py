@@ -38,7 +38,7 @@ def send(bot_token, from_id, content, chan_name):
     }
     chan_name = '@{}'.format(chan_name)
     base_link = 'https://api.telegram.org/bot{}/sendMessage'
-    message = base64.b64encode(json.dumps(to_send).encode('ascii'))
+    message = base64.b64encode(json.dumps(to_send).encode())
     response = requests.post(
         url=base_link.format(bot_token),
         data={
@@ -54,7 +54,7 @@ def read(chan_name):
     response = requests.get(url='https://t.me/s/{0}'.format(chan_name)).text
     response = response.split('<div class="tgme_widget_message_text js-message_text" dir="auto">')[-1]
     response = response.split('</div>')[0]
-    decoded_message = json.loads(base64.b64decode(response).decode('ascii'))
+    decoded_message = json.loads(base64.b64decode(response).decode())
     from_id, content = decoded_message['f'], decoded_message['c']
     print('Got message from {0}: {1}'.format(from_id, content))
     return from_id, content
