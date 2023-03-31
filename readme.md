@@ -2,10 +2,12 @@
 
 ### Send and recieve messages with the usage of Telegram
 
-TODO: Kotlin classes
-TODO: Demo
+TODO:
 
-#### Setup
+- Kotlin classes
+- Demo
+
+#### Usage: CLI with Python Script
 
 1. Create bot using `@BotFather` and get its token
 2. Create public dead drop channel and add the bot as an admin
@@ -22,3 +24,7 @@ Example:
 ```
 python .\testbot.py read -n testchannelname
 ```
+
+#### Usage: Kotlin library
+
+TODO
