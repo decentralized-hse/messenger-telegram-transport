@@ -2,10 +2,9 @@
 
 ### Send and recieve messages with the usage of Telegram
 
-TODO:
+#### Demo
 
-- Kotlin classes
-- Demo
+CLI usage [demonstration](https://drive.google.com/file/d/1BOZ0Q28qOZJBzg_2m6cXyV22lATXVssZ/view?usp=sharing): sending and receiving messages. (The example's bot token has been revoked)
 
 #### Usage: CLI with Python Script
 
@@ -22,9 +21,9 @@ python .\transport.py send -t 0123456789:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -n test
 
 Example:
 ```
-python .\testbot.py read -n testchannelname
+python .\transport.py read -n testchannelname
 ```
 
 #### Usage: Kotlin library
 
-TODO
+You can integrate Kotlin classes `Message.kt` and `TelegramClient.kt` for the usage inside Android app
